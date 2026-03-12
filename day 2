@@ -1,0 +1,79 @@
+# num = int(input("Enter any one digit: "))
+
+# if num > 0:
+#     print("Number is Positive")
+# elif num < 0:
+#     print("Number is Negative")
+# else:
+#     print("Number is Zero")
+# write a program to accpet days and and check working days and weekend
+# day = input("Enter a day: ").lower()
+
+# if day == "saturday" or day == "sunday":
+#     print("It is a Weekend")
+# else:
+#     print("It is a Working Day")
+#    wap to accept three paper marks and calculate total marks 
+# ,% and check if the percentage is greater than or eqaul to 60 
+# then he/she is eligible  for placement
+# m1 = int(input("Enter marks of Paper 1: "))
+# m2 = int(input("Enter marks of Paper 2: "))
+# m3 = int(input("Enter marks of Paper 3: "))
+
+# total = m1 + m2 + m3
+# percentage = total / 3
+
+# print("Total Marks =", total)
+# print("Percentage =", percentage)
+
+# if percentage >= 60:
+#     print("Eligible for Placement")
+# else:
+#     print("Not Eligible for Placement")
+# wap to accept 5 number in 5 different  var and 
+# check maximum value and print using simple if 
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+# c = int(input("Enter third number: "))
+# d = int(input("Enter fourth number: "))
+# e = int(input("Enter fifth number: "))
+
+# max = a
+
+# if b > max:
+#     max = b
+# if c > max:
+#     max = c
+# if d > max:
+#     max = d
+# if e > max:
+#     max = e
+
+# print("Maximum number is:", max)
+# a = 10
+# b = 5
+
+# if a > b:
+#     if a > 0:
+#         print("a is greater and positive")
+#     else:
+#         print("a is greater but not positive")
+# else:
+#     print("b is greater")
+# per = float(input("Enter percentage: "))
+
+# if per > 90:
+#     print("Grade A")
+# elif per > 80:
+#     print("Grade B")
+# elif per > 60:
+#     print("Grade C")
+# else:
+#     print("FAIL")
+balance = float(input("Enter account balance: "))
+withdraw = float(input("Enter withdrawal amount: "))
+
+if withdraw <= balance:
+    print("Transaction Successful")
+else:
+    print("Insufficient Balance")
