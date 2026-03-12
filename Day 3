@@ -1,0 +1,134 @@
+# # WAP to count vowels and consonants in a given name (with data)
+
+# name = "Soham"
+
+# vowels = "aeiouAEIOU"
+# v = 0
+# c = 0
+
+# for ch in name:
+#     if ch in vowels:
+#         v = v + 1
+#     else:
+#         c = c + 1
+
+# print("Name:", name)
+# print("Number of vowels:", v)
+# print("Number of consonants:", c)
+# WAP to remove duplicate characters from a string
+
+# name = "sohamwaghmare"
+# result = ""
+
+# for ch in name:
+#     if ch not in result:
+#         result = result + ch
+
+# print("Original String:", name)
+# print("After removing duplicates:", result)
+# mylist = [2, 5, 8, 4, 1, 9, 8]
+
+# even = 0
+# odd = 0
+
+# for i in mylist:
+#     if i % 2 == 0:
+#         even += 1
+#     else:
+#         odd += 1
+
+# print("Even =", even)
+# print("Odd =", odd)
+# mylist = [2, 5, 8, 4, 1, 9, 8]
+
+# total = 0
+
+# for i in mylist:
+#     total += i
+
+# print("Sum =", total)
+# val = [1, 2, 3, 5, 5, 5, 1, 2, 4, 4, 6, 6, 6]
+
+# print(val.index(1))
+# print(val.index(2))
+# print(val.index(3))
+# print(val.index(4))
+# print(val.index(5))
+# print(val.index(6))
+# n = [1, 2, 3, 5, 5, 5, 1, 2, 4, 4, 6, 6, 6]
+
+# print(n.count(1))
+# print(n.count(2))
+# print(n.count(3))
+# print(n.count(4))
+# print(n.count(5))
+# print(n.count(6))
+# print(n.count(7))
+# rollno = [3, 5, 7, 1, 11, 4, 5, 2]
+# for x in rollno:
+#     if x == 2 or x == 4 or x == 6 or x == 8 or x == 10:
+#         print("even no is found ", x)
+#         break
+# name = "prashant"
+# i = 0
+
+# for x in name:
+#     if x == 'n':
+#         print("The character present at index no ", i, ", value:", x)
+#         break
+#     i = i + 1   # update by one
+# for i in range(10):
+#     if i == 5:
+#         continue
+#     print(i)
+# list1 = [1, 2, 4, 5]
+# list2 = [5, 4, 2, 1]
+
+# for i in range(len(list1)):
+#     print(list1[i], list2[i])
+# for i, j in zip(range(1,6), range(6,0,-1)):  # i=1..4, j=?
+#     if i == 3 and j == 3:
+#         continue
+#     print(i, ":", j)
+# WAP to check character type
+
+# ch = input("Enter any character: ")
+
+# if ch.isupper():
+#     print("Uppercase Letter")
+# elif ch.islower():
+#     print("Lowercase Letter")
+# elif ch.isdigit():
+#     print("Digit")
+# else:
+#     print("Special Symbol")
+# WAP to check character using ASCII values
+
+# ch = input("Enter any character: ")
+# ch = ord(ch)
+
+# if ch >= 65 and ch <= 90:   # A = 65 to Z = 90
+#     print("Your entered character is in Upper Case")
+
+# elif ch >= 97 and ch <= 122:   # a = 97 to z = 122
+#     print("Your entered character is in Lower Case")
+
+# elif ch >= 48 and ch <= 57:   # 0 = 48 to 9 = 57
+#     print("Your entered character is Digit")
+
+# else:
+#     print("Your entered character is Special Symbol")
+v = ['a', 'e', 'i', 'o', 'u']
+
+w = input("Enter the word where we will search the vowels: ")
+# w = prashantjha
+
+found = []   # a
+
+for i in w:  # i = 6 : n
+    if i in v:
+        if i not in found:
+            found.append(i)
+
+print("Found vowels =", found)
+print("Unique vowels", len(found), "from the given word =", w)
