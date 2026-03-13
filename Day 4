@@ -1,0 +1,129 @@
+# while loop
+
+# i = 1
+# # i = 3
+
+# while i <= 5:
+#     print(i)
+#     i = i + 1
+    # username = ""
+    # password = ""
+    # while username != "admin"and password != "Hello":
+    # 
+# mycart = [10, 20, 200, 300, 800, 60, 700]
+
+# for i in mycart:
+#     if i > 400:
+#         print("This my purchased cart item")
+#         continue
+#     print(i)
+# mydict = {
+#     101: "prashant",
+#     102: "sahil",
+#     "103": "nikhil",
+#     "104": "triveni",
+#     101: "atul",
+#     104: "sachin"
+# }
+
+# print(mydict)
+# mydict = {
+#     101: "prashant",
+#     102: "sahil",
+#     103: "nikhil",
+#     104: "triveni"
+# }
+
+# print(mydict)
+
+# Creating a dictionary
+# mydict = {101: "rahul", 102: "rohan", 103: "amit"}
+
+# # Access the value using key
+# a = mydict[102]
+# print(a)
+
+# # Update the value of a key
+# mydict[102] = "pavan"
+
+# print(mydict)
+# for x in dict.values():
+#     print(x)
+
+# # Printing Key and Values both
+# for x, y in dict.items():
+#     print(x, y)
+# Printing key and values
+# mydict = {101: "Rahul", 102: "Pavan", 103: "Amit"}
+
+# for x, y in mydict.items():
+#     print(x, y)
+
+# mydict["mobile_no"] = 4646463738
+# print(mydict)
+
+# mydict["Department"] = "Management"
+# print(mydict)
+# dict - if we want to represent binary data like images etc
+
+# mydict = {
+#     101: "prashant",
+#     "professional": "developer",
+#     "empid": 1001
+# }
+
+# mydict.pop(101)
+# print(mydict)
+# name = "racecar"
+# if name ==name[::-1]:
+#     print("palindrome string")
+# else:
+#     print("Not palindrome")
+#nested for loop
+#i=2, j=4
+
+# for i in range(1,4):   #outer loop ==> row's
+#     for j in range(1,4):   #inner loop ==> col's
+#         print(i, end=" ")
+#     print()
+#nested for loop
+#i=2, j=4
+# n = int(input("Enter the number of rows: "))
+# for i in range(1, n+1):
+#     for j in range(1, n+1):
+#         print(chr(64+i), end=" ")
+#     print()
+# n = int(input("Enter the number of rows: "))
+
+# for i in range(1, n+1):
+#     for j in range(1, n+1):
+#         print(n+1-i, end=" ")
+#     print()
+# n = int(input("Enter the number of rows: "))
+
+# for i in range(1, n+1):
+#     for j in range(1, 1+i):
+#         print(i, end=" ")
+#     print()
+n = int(input("Enter the number of students: "))
+d = {}
+
+for i in range(n):
+    name = input("Enter Student Name: ")
+    marks = input("Enter Student Marks: ")
+    d[name] = marks
+
+while True:
+    name = input("Enter Student Name to get Marks: ")
+    marks = d.get(name, -1)
+
+    if marks == -1:
+        print("Student Not Found")
+    else:
+        print("The Marks of", name, "are", marks)
+
+    option = input("Do you want to find another student marks [Yes|No]: ")
+    if option == "No":
+        break
+
+print("Thanks for using our application")
